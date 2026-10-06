@@ -11,13 +11,15 @@ Apple silicon и Intel.
 
 ## Установка
 
-1. Скачайте `VPNLauncher-<версия>-universal.zip` и `SHA256SUMS` со страницы релиза.
-2. Проверьте архив: `shasum -a 256 -c SHA256SUMS` в папке с обоими файлами должна
+1. Скачайте `VPNLauncher-<версия>.dmg` и `SHA256SUMS` со страницы релиза.
+2. Проверьте образ: `shasum -a 256 -c SHA256SUMS` в папке с обоими файлами должна
    напечатать `OK`.
-3. Распакуйте и перенесите **VPN Launcher** в «Программы».
+3. Откройте `.dmg` и в появившемся окне перетащите **VPN Launcher** в «Программы».
 4. Приложение не нотаризовано Apple, поэтому первый запуск macOS заблокирует. Откройте
    «Системные настройки» → «Конфиденциальность и безопасность» и нажмите «Всё равно
-   открыть». Подробности — в `INSTALL.txt` внутри архива.
+   открыть». То же написано в окне образа и в `INSTALL.txt`.
+
+Ссылки «Source code» на странице релиза GitHub добавляет сам; в них только этот README.
 
 О новых версиях приложение сообщает само: раз в сутки проверяет этот репозиторий
 (выключается в настройках, вкладка «Общие»).
@@ -33,7 +35,7 @@ split-DNS resolver. Russian and English interface, macOS 13+, Apple silicon and 
 **Download:** [latest release](https://github.com/d4rkm3z/vpn-launcher/releases/latest).
 This repository holds releases only; there is no source code here.
 
-Verify the archive with `shasum -a 256 -c SHA256SUMS`, unpack it and move the app to
-Applications. The app is not notarized, so on the first launch open System Settings →
+Verify the image with `shasum -a 256 -c SHA256SUMS`, open the `.dmg` and drag the app
+to Applications. The app is not notarized, so on the first launch open System Settings →
 Privacy & Security → Open Anyway. The app checks this repository for new versions once a
 day; the check can be switched off on the General tab.
